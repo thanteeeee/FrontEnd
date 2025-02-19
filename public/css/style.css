@@ -15,12 +15,13 @@ body {
   
   /* Style the table */
   table {
+    
     border-collapse: collapse;
     width: 100%;
   }
   
   th, td {
-    text-align: left;
+    text-align: center;
     padding: 16px;
   }
   
@@ -116,6 +117,6 @@ form {
   }
   
   th, td {
-    text-align: left;
+    text-align: center;
     padding: 16px;
   }

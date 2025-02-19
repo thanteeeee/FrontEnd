@@ -6,11 +6,22 @@
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <h1><%= book.title %></h1>
-    <p>Author: <%= book.author %></p>
-    <a href="/update/<%= book.id %>">Edit</a>
-    <a href="/delete/<%= book.id %>">Delete</a>
-    <a href="/">Back to List</a>
+    <h1>View Book</h1>
+    <table class="book-table">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+        <tr>
+            <td><%= book.title %></td>
+            <td><%= book.author %></td>
+        </tr>
+    </table>
+    <div class="link-center">
+        <a href="/update/<%= book.id %>">Edit</a>
+        <a href="/delete/<%= book.id %>">Delete</a>
+        <a href="/">Back to List</a>
+    </div>
 </body>
 </html>
 
